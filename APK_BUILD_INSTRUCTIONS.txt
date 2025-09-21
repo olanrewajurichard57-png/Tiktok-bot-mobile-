@@ -1,0 +1,63 @@
+🚀 TikTok Bot Mobile - APK Build Instructions
+
+Your mobile app is ready! Since Replit can't build APKs directly, here's how to get your APK file:
+
+📋 QUICK START (Recommended):
+
+1. CREATE GITHUB REPOSITORY:
+   - Go to https://github.com and create a new repository
+   - Name it "tiktok-bot-mobile" or any name you prefer
+   - Make it public (required for free GitHub Actions)
+
+2. UPLOAD YOUR CODE:
+   - Download all files from this Replit project:
+     • main.py (your mobile app)
+     • buildozer.spec (Android configuration)
+     • .github/workflows/build-apk.yml (build automation)
+   - Upload them to your GitHub repository
+
+3. AUTOMATIC APK BUILD:
+   - GitHub Actions will automatically start building your APK
+   - Go to "Actions" tab in your repository to watch the build
+   - When complete (15-20 minutes), download your APK from "Artifacts"
+
+📱 ALTERNATIVE METHODS:
+
+METHOD 1 - Local Build (if you have Linux/Mac):
+   sudo apt-get install zlib1g-dev
+   pip install buildozer
+   buildozer android debug
+
+METHOD 2 - Docker Build:
+   docker run --rm -v "$PWD":/home/user/hostcwd kivy/buildozer android debug
+
+METHOD 3 - Google Colab (Free Online):
+   - Use the Colab notebook for Kivy APK building
+   - Upload your project files and run the build cells
+
+🔧 YOUR FILES ARE READY:
+
+✅ main.py - Complete mobile app with UI and bot functionality
+✅ buildozer.spec - Configured for Android 5.0+ (API 21)
+✅ .github/workflows/build-apk.yml - Automated GitHub Actions build
+
+📦 APK FEATURES:
+
+Your mobile app includes:
+• Clean touch interface for Android
+• All 6 bot types (Views, Hearts, Comments, Followers, Shares)
+• Start/Stop controls
+• Real-time status updates
+• Works on Android 5.0 and above
+• Optimized for ARM and ARM64 devices
+
+🎯 NEXT STEPS:
+
+1. Upload to GitHub → Automatic APK build
+2. Download APK from GitHub Actions artifacts
+3. Install on your Android device
+4. Enable "Unknown Sources" in Android settings if needed
+
+The APK will be named: TikTok-Bot-Mobile.apk (~20-30MB)
+
+Need help? The GitHub Actions build logs will show any issues.
